@@ -1,0 +1,70 @@
+.App {
+  padding-top: 40px;
+  background-color: rgb(243, 241, 241);
+  margin-bottom: 10px;
+
+  &__about-us {
+    display: flex;
+    justify-content: space-between;
+
+    @include Bigger {
+      justify-content: space-evenly;
+    }
+    
+    @media (max-width: 1040px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+  }
+
+  &__workers {
+    width: 100%;
+    background-color: rgba(74, 57, 73);
+    
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: url('../../images/bagImg.png');
+      background-position: top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 70px 0;
+      color: rgb(243, 241, 241, 0.7);
+    }
+  }
+
+  &__title {
+    &::after {
+      content: "";
+      display: block;
+      width: 18%;
+      height: 2px;
+      background-color: rgb(241, 132, 8);
+    }
+  }
+
+  &__worker-phrase {
+    text-align: center;
+  }
+
+  &__slider {
+    margin-top: 30px;
+  }
+
+  &__worker-name {
+    font-family: 'PT Serif';
+  }
+
+  &__phone-App {
+    @media (max-width: 640px) {
+      width: 80%;
+    }
+  }
+}

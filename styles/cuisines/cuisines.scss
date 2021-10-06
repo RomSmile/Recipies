@@ -1,0 +1,65 @@
+.cuisines {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 40px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 540px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__cuisine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    width: 100%;
+    color: #fff;
+
+    @media (max-width: 540px) {
+      width: 320px;
+      margin: 0 auto;
+    }
+  }
+
+  &__name-of-cuisine {
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__amount-of-recipes {
+    color: rgb(243, 241, 241, 0.7);
+    font-size: 13px;
+    font-family: 'PT Serif';
+  }
+
+  &__title {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+    &::after {
+      content: "";
+      display: block;
+      width: 88px;
+      height: 2px;
+      background-color: rgb(241, 132, 8);
+      margin: 0 auto;
+    }
+  }
+
+  &__active {
+    display: flex;
+    justify-content: space-between;
+  }
+}
