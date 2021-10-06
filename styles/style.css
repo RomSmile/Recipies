@@ -269,7 +269,7 @@ h1, h2, h3 {
 }
 
 .about-us {
-  padding: 80px 0;
+  padding: 80px 5px;
 }
 
 .content {
@@ -460,6 +460,7 @@ h1, h2, h3 {
   border-radius: 3px;
   letter-spacing: normal;
   transition: linear 0.4s;
+  text-transform: uppercase;
 }
 .cuisines__sort:hover {
   background-color: black;
