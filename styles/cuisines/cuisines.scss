@@ -62,4 +62,19 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__type-of-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__number {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  &__description {
+    font-size: 13px;
+  }
 }
