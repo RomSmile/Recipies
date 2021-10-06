@@ -27,7 +27,7 @@
       display: block;
       width: 88px;
       height: 2px;
-      background-color: rgb(241, 132, 8);
+      background-color: $afterColor;
       margin: 0 auto;
     }
   }
@@ -35,5 +35,6 @@
   &__description {
     text-align: center;
     font-size: 13px;
+    color: $greyColor;
   }
 }

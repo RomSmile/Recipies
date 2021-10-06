@@ -1,0 +1,43 @@
+.footer {
+  padding: 30px 0;
+  background-color: $greyBackground;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    color: $greyColor;
+
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 650px) {
+      font-size: 12px;
+    }
+  }
+
+  &__designers {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    @media (max-width: 650px) {
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 420px) {
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+
+  &__fudi {
+    @media (max-width: 420px) {
+      text-align: center;
+    }
+  }
+
+  &__designers-site {
+    color: black;
+    font-weight: 600;
+  }
+}

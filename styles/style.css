@@ -306,6 +306,7 @@ h1, h2, h3 {
 .content__description {
   text-align: center;
   font-size: 13px;
+  color: #bbbbbb;
 }
 
 .App {
@@ -330,6 +331,7 @@ h1, h2, h3 {
 }
 .App__text {
   font-size: 13px;
+  color: #bbbbbb;
 }
 .App__workers {
   width: 100%;
@@ -345,12 +347,12 @@ h1, h2, h3 {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 70px 0;
-  color: rgba(243, 241, 241, 0.7);
+  color: #bbbbbb;
 }
 .App__title::after {
   content: "";
   display: block;
-  width: 18%;
+  width: 22%;
   height: 2px;
   background-color: #f18408;
 }
@@ -398,19 +400,13 @@ h1, h2, h3 {
   width: 100%;
   color: #fff;
 }
-@media (max-width: 540px) {
-  .cuisines__cuisine {
-    width: 320px;
-    margin: 0 auto;
-  }
-}
 .cuisines__name-of-cuisine {
   font-size: 28px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 .cuisines__amount-of-recipes {
-  color: rgba(243, 241, 241, 0.7);
+  color: #bbbbbb;
   font-size: 13px;
   font-family: "PT Serif";
 }
@@ -430,10 +426,24 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 650px) {
+  .cuisines__active {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .cuisines__type-of-amount {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 650px) {
+  .cuisines__type-of-amount {
+    margin-bottom: 30px;
+  }
+  .cuisines__type-of-amount:last-child {
+    margin-bottom: 0;
+  }
 }
 .cuisines__number {
   font-weight: 800;
@@ -441,6 +451,63 @@ h1, h2, h3 {
 }
 .cuisines__description {
   font-size: 13px;
+}
+.cuisines__sort {
+  margin-top: 40px;
+  align-self: center;
+  padding: 22px 77px;
+  border: 3px solid black;
+  border-radius: 3px;
+  letter-spacing: normal;
+  transition: linear 0.4s;
+}
+.cuisines__sort:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.footer {
+  padding: 30px 0;
+  background-color: #f3f1f1;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  color: #bbbbbb;
+}
+@media (max-width: 420px) {
+  .footer__content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 650px) {
+  .footer__content {
+    font-size: 12px;
+  }
+}
+.footer__designers {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+@media (max-width: 650px) {
+  .footer__designers {
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 420px) {
+  .footer__designers {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .footer__fudi {
+    text-align: center;
+  }
+}
+.footer__designers-site {
+  color: black;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
