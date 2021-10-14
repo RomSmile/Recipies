@@ -18,6 +18,9 @@
   }
 
   &__cuisine {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,6 +28,10 @@
     height: 225px;
     width: 100%;
     color: #fff;
+
+    @media (max-width: 540px) {
+      background-size: contain;
+    }
   }
 
   &__name-of-cuisine {

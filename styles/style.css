@@ -267,6 +267,13 @@ h1, h2, h3 {
 .buttons__toggler {
   width: 20px;
 }
+.buttons__toggler-close {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+  color: #fff;
+  font-size: 18px;
+}
 
 .about-us {
   padding: 80px 5px;
@@ -275,10 +282,12 @@ h1, h2, h3 {
 .content {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 @media (max-width: 850px) {
   .content {
     flex-direction: column;
+    align-items: center;
   }
 }
 .content__item {
@@ -286,6 +295,12 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 360px;
+}
+@media (max-width: 1040px) {
+  .content__item {
+    width: 300px;
+  }
 }
 @media (max-width: 850px) {
   .content__item {
@@ -307,12 +322,24 @@ h1, h2, h3 {
   text-align: center;
   font-size: 13px;
   color: #bbbbbb;
+  padding: 0 5px;
+  max-width: 360px;
+}
+@media (max-width: 1040px) {
+  .content__description {
+    max-width: 300px;
+  }
 }
 
 .App {
-  padding-top: 40px;
+  padding-top: 100px;
   background-color: #f3f1f1;
   margin-bottom: 10px;
+}
+@media (max-width: 1040px) {
+  .App {
+    padding-top: 40px;
+  }
 }
 .App__about-us {
   display: flex;
@@ -333,21 +360,25 @@ h1, h2, h3 {
   font-size: 13px;
   color: #bbbbbb;
 }
+.App__download {
+  margin-top: 30px;
+}
 .App__workers {
   width: 100%;
   background-color: #4a3949;
 }
 .App__workers-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: url("../images/bagImg.png");
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
   padding: 70px 0;
   color: #bbbbbb;
+}
+.App__swiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .App__title::after {
   content: "";
@@ -369,6 +400,26 @@ h1, h2, h3 {
   .App__phone-App {
     width: 80%;
   }
+}
+.App__description {
+  padding: 0 10px 30px;
+  margin-top: 80px;
+}
+@media (max-width: 1040px) {
+  .App__description {
+    margin-top: 0;
+  }
+}
+
+.swiper {
+  height: 300px;
+}
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  background-color: #fff;
 }
 
 .cuisines {
@@ -392,6 +443,9 @@ h1, h2, h3 {
   }
 }
 .cuisines__cuisine {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -399,6 +453,11 @@ h1, h2, h3 {
   height: 225px;
   width: 100%;
   color: #fff;
+}
+@media (max-width: 540px) {
+  .cuisines__cuisine {
+    background-size: contain;
+  }
 }
 .cuisines__name-of-cuisine {
   font-size: 28px;

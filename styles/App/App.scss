@@ -1,7 +1,11 @@
 .App {
-  padding-top: 40px;
+  padding-top: 100px;
   background-color: $greyBackground;
   margin-bottom: 10px;
+
+  @media (max-width: 1040px) {
+    padding-top: 40px;
+  }
 
   &__about-us {
     display: flex;
@@ -22,16 +26,16 @@
     color: $greyColor;
   }
 
+  &__download {
+    margin-top: 30px;
+  }
+
   &__workers {
     width: 100%;
     background-color: rgba(74, 57, 73);
     
 
     &-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       background: url('../images/bagImg.png');
       background-position: top center;
       background-size: contain;
@@ -39,6 +43,12 @@
       padding: 70px 0;
       color: $greyColor;
     }
+  }
+
+  &__swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__title {
@@ -68,4 +78,27 @@
       width: 80%;
     }
   }
+
+  &__description {
+    padding: 0 10px 30px;
+    margin-top: 80px;
+
+    @media (max-width: 1040px) {
+      margin-top: 0;
+    }
+  }
 }
+
+.swiper {
+  height: 300px;
+
+  & &-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+}
+
+

@@ -22,6 +22,7 @@ cuisines.map(cuisine => {
     <div class="cuisines__cuisine" style="
       background: url('${cuisine.image}');
       background-size: cover;
+      background-position: center;
       background-repeat: no-repeat;
     ">
       <span class="cuisines__amount-of-recipes">${cuisine.recipes} Recipes</span>
