@@ -28,11 +28,19 @@
       margin-top: 8px;
       text-align: center;
     }
+
+    @include large {
+      font-size: 24px;
+    }
   }
 
   &__fudi {
     @media (max-width: 420px) {
       text-align: center;
+    }
+
+    @include large {
+      font-size: 24px;
     }
   }
 

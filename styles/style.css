@@ -69,6 +69,11 @@ h1, h2, h3 {
 .nav__link:hover {
   background-color: black;
 }
+@media (min-width: 1960px) {
+  .nav__link {
+    font-size: 40px;
+  }
+}
 
 .form-container {
   display: none;
@@ -86,6 +91,11 @@ h1, h2, h3 {
   align-items: center;
   background: linear-gradient(#450e79, #967857);
   padding: 30px 40px;
+}
+@media (min-width: 1960px) {
+  .form {
+    padding: 40px 50px;
+  }
 }
 .form__form-field {
   display: flex;
@@ -106,8 +116,18 @@ h1, h2, h3 {
 .form__logo {
   width: 100px;
 }
+@media (min-width: 1960px) {
+  .form__logo {
+    width: 150px;
+  }
+}
 .form__title {
   text-transform: uppercase;
+}
+@media (min-width: 1960px) {
+  .form__title {
+    font-size: 28px;
+  }
 }
 .form__input {
   padding: 15px 10px;
@@ -122,6 +142,11 @@ h1, h2, h3 {
 .form__input:last-of-type {
   margin-bottom: 25px;
 }
+@media (min-width: 1960px) {
+  .form__input {
+    font-size: 24px;
+  }
+}
 .form__button {
   padding: 15px 0;
   color: #fff;
@@ -133,12 +158,22 @@ h1, h2, h3 {
 .form__button:hover {
   background-color: #450e79;
 }
+@media (min-width: 1960px) {
+  .form__button {
+    font-size: 24px;
+  }
+}
 .form__prompt {
   text-align: center;
   text-transform: uppercase;
 }
 .form__prompt-link {
   text-decoration: underline;
+}
+@media (min-width: 1960px) {
+  .form__prompt {
+    font-size: 20px;
+  }
 }
 .form__leave {
   position: absolute;
@@ -156,6 +191,13 @@ h1, h2, h3 {
 }
 .form__leave:hover {
   background-color: #967857;
+}
+@media (min-width: 1960px) {
+  .form__leave {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .header {
@@ -196,6 +238,20 @@ h1, h2, h3 {
     width: 100%;
   }
 }
+@media (min-width: 1960px) {
+  .container {
+    max-width: 1840px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media (min-width: 2500px) {
+  .container {
+    max-width: 2300px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 
 .header-block {
   display: flex;
@@ -205,6 +261,14 @@ h1, h2, h3 {
 @media (max-width: 1200px) {
   .header-block__buttons {
     margin-right: 20px;
+  }
+}
+.header-block__logo {
+  width: 147px;
+}
+@media (min-width: 1960px) {
+  .header-block__logo {
+    width: 250px;
   }
 }
 
@@ -228,12 +292,22 @@ h1, h2, h3 {
     font-size: 70px;
   }
 }
+@media (min-width: 1960px) {
+  .get-started-container__title {
+    font-size: 100px;
+  }
+}
 .get-started-container__title-part {
   display: block;
   font-family: "PT Serif";
   color: rgba(219, 218, 218, 0.8);
   font-size: 24px;
   text-transform: none;
+}
+@media (min-width: 1960px) {
+  .get-started-container__title-part {
+    font-size: 38px;
+  }
 }
 .get-started-container__get-started {
   padding: 22px 77px;
@@ -242,12 +316,22 @@ h1, h2, h3 {
   letter-spacing: normal;
   transition: linear 0.4s;
 }
+@media (min-width: 1960px) {
+  .get-started-container__get-started {
+    font-size: 28px;
+  }
+}
 .get-started-container__get-started:hover {
   background-color: black;
 }
 .get-started-container__description {
   letter-spacing: normal;
   text-align: center;
+}
+@media (min-width: 1960px) {
+  .get-started-container__description {
+    font-size: 20px;
+  }
 }
 
 .buttons {
@@ -264,8 +348,11 @@ h1, h2, h3 {
 .buttons__log:hover {
   background-color: black;
 }
-.buttons__toggler {
-  width: 20px;
+@media (min-width: 1960px) {
+  .buttons__log {
+    margin-right: 35px;
+    font-size: 20px;
+  }
 }
 .buttons__toggler-close {
   background-color: transparent;
@@ -273,6 +360,19 @@ h1, h2, h3 {
   padding: 0;
   color: #fff;
   font-size: 18px;
+}
+@media (min-width: 1960px) {
+  .buttons__toggler-close {
+    font-size: 28px;
+  }
+}
+.buttons__toggler-open {
+  width: 15px;
+}
+@media (min-width: 1960px) {
+  .buttons__toggler-open {
+    width: 30px;
+  }
 }
 
 .about-us {
@@ -302,12 +402,22 @@ h1, h2, h3 {
     width: 300px;
   }
 }
+@media (min-width: 1960px) {
+  .content__item {
+    width: 420px;
+  }
+}
 @media (max-width: 850px) {
   .content__item {
     margin-bottom: 40px;
   }
   .content__item:last-child {
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1960px) {
+  .content__title {
+    font-size: 28px;
   }
 }
 .content__title::after {
@@ -330,6 +440,20 @@ h1, h2, h3 {
     max-width: 300px;
   }
 }
+@media (min-width: 1960px) {
+  .content__description {
+    font-size: 20px;
+    min-width: 420px;
+  }
+}
+.content__image {
+  width: 107px;
+}
+@media (min-width: 1960px) {
+  .content__image {
+    width: 150px;
+  }
+}
 
 .App {
   padding-top: 100px;
@@ -340,6 +464,15 @@ h1, h2, h3 {
   .App {
     padding-top: 40px;
   }
+}
+@media (min-width: 1960px) {
+  .App__download-item {
+    width: 140px;
+    height: 50px;
+  }
+}
+.App__download-link:first-of-type {
+  margin-right: 20px;
 }
 .App__about-us {
   display: flex;
@@ -359,6 +492,11 @@ h1, h2, h3 {
 .App__text {
   font-size: 13px;
   color: #bbbbbb;
+}
+@media (min-width: 1960px) {
+  .App__text {
+    font-size: 20px;
+  }
 }
 .App__download {
   margin-top: 30px;
@@ -380,6 +518,11 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1960px) {
+  .App__title {
+    font-size: 28px;
+  }
+}
 .App__title::after {
   content: "";
   display: block;
@@ -390,11 +533,29 @@ h1, h2, h3 {
 .App__worker-phrase {
   text-align: center;
 }
+@media (min-width: 1960px) {
+  .App__worker-phrase {
+    font-size: 24px;
+  }
+}
 .App__slider {
   margin-top: 30px;
 }
 .App__worker-name {
   font-family: "PT Serif";
+}
+@media (min-width: 1960px) {
+  .App__worker-name {
+    font-size: 20px;
+  }
+}
+.App__worker {
+  width: 114px;
+}
+@media (min-width: 1960px) {
+  .App__worker {
+    width: 140px;
+  }
 }
 @media (max-width: 640px) {
   .App__phone-App {
@@ -413,6 +574,11 @@ h1, h2, h3 {
 
 .swiper {
   height: 300px;
+}
+@media (min-width: 1960px) {
+  .swiper {
+    height: 350px;
+  }
 }
 .swiper .swiper-pagination-bullet {
   width: 10px;
@@ -464,14 +630,29 @@ h1, h2, h3 {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+@media (min-width: 1960px) {
+  .cuisines__name-of-cuisine {
+    font-size: 38px;
+  }
+}
 .cuisines__amount-of-recipes {
   color: #bbbbbb;
   font-size: 13px;
   font-family: "PT Serif";
 }
+@media (min-width: 1960px) {
+  .cuisines__amount-of-recipes {
+    font-size: 20px;
+  }
+}
 .cuisines__title {
   margin: 0 auto;
   margin-bottom: 40px;
+}
+@media (min-width: 1960px) {
+  .cuisines__title {
+    font-size: 28px;
+  }
 }
 .cuisines__title::after {
   content: "";
@@ -508,8 +689,18 @@ h1, h2, h3 {
   font-weight: 800;
   font-size: 30px;
 }
+@media (min-width: 1960px) {
+  .cuisines__number {
+    font-size: 40px;
+  }
+}
 .cuisines__description {
   font-size: 13px;
+}
+@media (min-width: 1960px) {
+  .cuisines__description {
+    font-size: 20px;
+  }
 }
 .cuisines__sort {
   margin-top: 40px;
@@ -520,6 +711,11 @@ h1, h2, h3 {
   letter-spacing: normal;
   transition: linear 0.4s;
   text-transform: uppercase;
+}
+@media (min-width: 1960px) {
+  .cuisines__sort {
+    font-size: 22px;
+  }
 }
 .cuisines__sort:hover {
   background-color: black;
@@ -560,9 +756,19 @@ h1, h2, h3 {
     text-align: center;
   }
 }
+@media (min-width: 1960px) {
+  .footer__designers {
+    font-size: 24px;
+  }
+}
 @media (max-width: 420px) {
   .footer__fudi {
     text-align: center;
+  }
+}
+@media (min-width: 1960px) {
+  .footer__fudi {
+    font-size: 24px;
   }
 }
 .footer__designers-site {

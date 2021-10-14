@@ -19,6 +19,10 @@
       width: 300px;
     }
 
+    @include large {
+      width: 420px;
+    }
+
     @media (max-width: 850px) {
       margin-bottom: 40px;
 
@@ -29,6 +33,10 @@
   }
 
   &__title {
+    @include large {
+      font-size: 28px;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -48,6 +56,19 @@
 
     @media (max-width: 1040px) {
       max-width: 300px;
+    }
+
+    @include large {
+      font-size: 20px;
+      min-width: 420px;
+    }
+  }
+
+  &__image {
+    width: 107px;
+
+    @include large {
+      width: 150px;
     }
   }
 }

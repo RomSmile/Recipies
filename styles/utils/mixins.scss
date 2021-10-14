@@ -16,3 +16,15 @@
   }
 }
 
+@mixin large {
+  @media (min-width: 1960px) {
+    @content;
+  }
+}
+
+@mixin largest {
+  @media (min-width: 2500px) {
+    @content;
+  }
+}
+

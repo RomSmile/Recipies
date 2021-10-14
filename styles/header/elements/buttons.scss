@@ -12,17 +12,32 @@
     &:hover {
       background-color: black;
     }
+
+    @include large {
+      margin-right: 35px;
+      font-size: 20px;
+    }
   }
 
   &__toggler {
-    width: 20px;
-
     &-close {
       background-color: transparent;
       border-color: transparent;
       padding: 0;
       color: #fff;
       font-size: 18px;
+
+      @include large {
+        font-size: 28px;
+      }
+    }
+
+    &-open {
+      width: 15px;
+
+      @include large {
+        width: 30px;
+      }
     }
   }
 }

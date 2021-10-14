@@ -7,6 +7,19 @@
     padding-top: 40px;
   }
 
+  &__download-item {
+    @include large {
+      width: 140px;
+      height: 50px;
+    }
+  }
+
+  &__download-link {
+    &:first-of-type {
+      margin-right: 20px;
+    }
+  }
+
   &__about-us {
     display: flex;
     justify-content: space-between;
@@ -24,6 +37,10 @@
   &__text {
     font-size: 13px;
     color: $greyColor;
+
+    @include large {
+      font-size: 20px;
+    }
   }
 
   &__download {
@@ -52,6 +69,10 @@
   }
 
   &__title {
+    @include large {
+      font-size: 28px;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -63,6 +84,10 @@
 
   &__worker-phrase {
     text-align: center;
+
+    @include large {
+      font-size: 24px;
+    }
   }
 
   &__slider {
@@ -71,6 +96,17 @@
 
   &__worker-name {
     font-family: 'PT Serif';
+    @include large {
+      font-size: 20px;
+    }
+  }
+
+  &__worker {
+    width: 114px;
+
+    @include large {
+      width: 140px;  
+    }
   }
 
   &__phone-App {
@@ -91,6 +127,10 @@
 
 .swiper {
   height: 300px;
+
+  @include large {
+    height: 350px;
+  }
 
   & &-pagination-bullet {
     width: 10px;

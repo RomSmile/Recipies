@@ -7,13 +7,14 @@ const targetToAboutUs = document.querySelector('a[href="#about-us"]');
 const targetToApp = document.querySelector('a[href="#App"]');
 const targetToCuisines = document.querySelector('a[href="#cuisines"]')
 
-togglerOpen.onclick = ('click', () => {
+togglerOpen.onclick = (() => {
   nav.style.cssText = `
     transform: translateX(0);
 
     transition: 0.3s;
   `;
 });
+
 
 
 togglerClose.onclick = ('click', () => {
