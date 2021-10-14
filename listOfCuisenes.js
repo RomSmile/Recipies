@@ -1,15 +1,16 @@
 const cuisines = [
-  {name: 'Italian', recipes: 327, image: './images/cuisines/Italian.png'},
-  {name: 'Indian', recipes: 856, image: './images/cuisines/Indian.png'},
-  {name: 'French', recipes: 27, image: './images/cuisines/French.png'},
-  {name: 'Steakhouse', recipes: 174, image: './images/cuisines/SteakHouse.png'},
-  {name: 'Seafood', recipes: 731, image: './images/cuisines/SeaFood.png'},
-  {name: 'Sushi', recipes: 327, image: './images/cuisines/Sushi.png'},
-  {name: 'Mexican', recipes: 529, image: './images/cuisines/Mexican.png'},
-  {name: 'Chinese', recipes: 145, image: './images/cuisines/Chinese.png'},
-  {name: 'Pizza', recipes: 327, image: './images/cuisines/Pizza.png'},
-  {name: 'American', recipes: 327, image: './images/cuisines/America.png'},
+  {name: 'Italian', recipes: 327, image: './images/cuisines/Italian.webp'},
+  {name: 'Indian', recipes: 856, image: './images/cuisines/Indian.webp'},
+  {name: 'French', recipes: 27, image: './images/cuisines/French.webp'},
+  {name: 'Steakhouse', recipes: 174, image: './images/cuisines/SteakHouse.webp'},
+  {name: 'Seafood', recipes: 731, image: './images/cuisines/SeaFood.webp'},
+  {name: 'Sushi', recipes: 327, image: './images/cuisines/Sushi.webp'},
+  {name: 'Mexican', recipes: 529, image: './images/cuisines/Mexican.webp'},
+  {name: 'Chinese', recipes: 145, image: './images/cuisines/Chinese.webp'},
+  {name: 'Pizza', recipes: 327, image: './images/cuisines/Pizza.webp'},
+  {name: 'American', recipes: 327, image: './images/cuisines/America.webp'},
 ];
+/* .webp */
 
 const secondCuisines = [...cuisines];
 

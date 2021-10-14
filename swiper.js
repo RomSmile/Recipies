@@ -6,7 +6,6 @@ const swiper = new Swiper('.swiper', {
 
     clickable: true,
   },
-
   effect: 'flip',
   speed: 800,
 })

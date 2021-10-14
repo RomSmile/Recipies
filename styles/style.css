@@ -160,7 +160,7 @@ h1, h2, h3 {
 
 .header {
   height: 100vh;
-  background: url("../images/main image.jpg");
+  background: url("../images/mainImage.webp");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -368,7 +368,7 @@ h1, h2, h3 {
   background-color: #4a3949;
 }
 .App__workers-container {
-  background: url("../images/bagImg.png");
+  background: url("../images/backImg.webp");
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
