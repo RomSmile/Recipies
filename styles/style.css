@@ -279,6 +279,7 @@ h1, h2, h3 {
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  text-shadow: 1px 1px 2px black;
 }
 .get-started-container__title {
   display: flex;
@@ -300,7 +301,7 @@ h1, h2, h3 {
 .get-started-container__title-part {
   display: block;
   font-family: "PT Serif";
-  color: rgba(219, 218, 218, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
   text-transform: none;
 }
@@ -315,6 +316,7 @@ h1, h2, h3 {
   border-radius: 3px;
   letter-spacing: normal;
   transition: linear 0.4s;
+  text-shadow: 1px 1px 2px black;
 }
 @media (min-width: 1960px) {
   .get-started-container__get-started {
@@ -344,6 +346,8 @@ h1, h2, h3 {
   padding: 5px 5px;
   border-radius: 5px;
   transition: 0.3s;
+  font-size: 16px;
+  text-shadow: 1px 1px 2px black;
 }
 .buttons__log:hover {
   background-color: black;
@@ -431,7 +435,7 @@ h1, h2, h3 {
 .content__description {
   text-align: center;
   font-size: 13px;
-  color: #bbbbbb;
+  color: #868585;
   padding: 0 5px;
   max-width: 360px;
 }
@@ -447,65 +451,66 @@ h1, h2, h3 {
   }
 }
 .content__image {
-  width: 107px;
+  height: 107px;
+  object-fit: contain;
 }
 @media (min-width: 1960px) {
   .content__image {
-    width: 150px;
+    height: 150px;
   }
 }
 
-.App {
+.app {
   padding-top: 100px;
   background-color: #f3f1f1;
   margin-bottom: 10px;
 }
 @media (max-width: 1040px) {
-  .App {
+  .app {
     padding-top: 40px;
   }
 }
 @media (min-width: 1960px) {
-  .App__download-item {
+  .app__download-item {
     width: 140px;
     height: 50px;
   }
 }
-.App__download-link:first-of-type {
+.app__download-link:first-of-type {
   margin-right: 20px;
 }
-.App__about-us {
+.app__about-us {
   display: flex;
   justify-content: space-between;
 }
 @media (min-width: 1440px) {
-  .App__about-us {
+  .app__about-us {
     justify-content: space-evenly;
   }
 }
 @media (max-width: 1040px) {
-  .App__about-us {
+  .app__about-us {
     flex-direction: column-reverse;
     align-items: center;
   }
 }
-.App__text {
+.app__text {
   font-size: 13px;
-  color: #bbbbbb;
+  color: #868585;
 }
 @media (min-width: 1960px) {
-  .App__text {
+  .app__text {
     font-size: 20px;
   }
 }
-.App__download {
+.app__download {
   margin-top: 30px;
 }
-.App__workers {
+.app__workers {
   width: 100%;
   background-color: #4a3949;
 }
-.App__workers-container {
+.app__workers-container {
   background: url("../images/backImg.webp");
   background-position: top center;
   background-size: contain;
@@ -513,61 +518,61 @@ h1, h2, h3 {
   padding: 70px 0;
   color: #bbbbbb;
 }
-.App__swiper {
+.app__swiper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 1960px) {
-  .App__title {
+  .app__title {
     font-size: 28px;
   }
 }
-.App__title::after {
+.app__title::after {
   content: "";
   display: block;
   width: 22%;
   height: 2px;
   background-color: #f18408;
 }
-.App__worker-phrase {
+.app__worker-phrase {
   text-align: center;
 }
 @media (min-width: 1960px) {
-  .App__worker-phrase {
+  .app__worker-phrase {
     font-size: 24px;
   }
 }
-.App__slider {
+.app__slider {
   margin-top: 30px;
 }
-.App__worker-name {
+.app__worker-name {
   font-family: "PT Serif";
 }
 @media (min-width: 1960px) {
-  .App__worker-name {
+  .app__worker-name {
     font-size: 20px;
   }
 }
-.App__worker {
+.app__worker {
   width: 114px;
 }
 @media (min-width: 1960px) {
-  .App__worker {
+  .app__worker {
     width: 140px;
   }
 }
 @media (max-width: 640px) {
-  .App__phone-App {
+  .app__phone-App {
     width: 80%;
   }
 }
-.App__description {
+.app__description {
   padding: 0 10px 30px;
   margin-top: 80px;
 }
 @media (max-width: 1040px) {
-  .App__description {
+  .app__description {
     margin-top: 0;
   }
 }
@@ -629,6 +634,7 @@ h1, h2, h3 {
   font-size: 28px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  text-shadow: 3px 3px 4px black;
 }
 @media (min-width: 1960px) {
   .cuisines__name-of-cuisine {
@@ -636,9 +642,10 @@ h1, h2, h3 {
   }
 }
 .cuisines__amount-of-recipes {
-  color: #bbbbbb;
-  font-size: 13px;
+  color: #e0dfdf;
+  font-size: 15px;
   font-family: "PT Serif";
+  text-shadow: 2px 2px 3px black;
 }
 @media (min-width: 1960px) {
   .cuisines__amount-of-recipes {
@@ -665,6 +672,7 @@ h1, h2, h3 {
 .cuisines__active {
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
 }
 @media (max-width: 650px) {
   .cuisines__active {
@@ -729,7 +737,7 @@ h1, h2, h3 {
 .footer__content {
   display: flex;
   justify-content: space-between;
-  color: #bbbbbb;
+  color: #868585;
 }
 @media (max-width: 420px) {
   .footer__content {

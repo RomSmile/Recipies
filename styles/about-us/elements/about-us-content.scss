@@ -65,10 +65,11 @@
   }
 
   &__image {
-    width: 107px;
+    height: 107px;
+    object-fit: contain;
 
     @include large {
-      width: 150px;
+      height: 150px;
     }
   }
 }
