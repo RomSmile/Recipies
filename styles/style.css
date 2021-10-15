@@ -496,7 +496,7 @@ h1, h2, h3 {
 }
 .app__text {
   font-size: 13px;
-  color: #868585;
+  color: #000;
 }
 @media (min-width: 1960px) {
   .app__text {
@@ -737,7 +737,7 @@ h1, h2, h3 {
 .footer__content {
   display: flex;
   justify-content: space-between;
-  color: #868585;
+  color: #000;
 }
 @media (max-width: 420px) {
   .footer__content {
