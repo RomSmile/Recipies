@@ -1,13 +1,14 @@
-# Test-Smart.UI
-
-- [LINK HERE](https://romsmile.github.io/Test-Smart.UI/)
+# Recipies landing examle
 
 ## Description
 
-Test-task of Smart.UI. This landing about App with ready recipes. 
+Landing page of application Recipies. 
 
 ## Local development
 
 * HTML, BEM
 * SCSS
 * JavaScript
+
+
+- [Preview link](https://romsmile.github.io/Test-Smart.UI/)
