@@ -11,4 +11,4 @@ Landing page of application Recipies.
 * JavaScript
 
 
-- [Preview link](https://romsmile.github.io/Test-Smart.UI/)
+[Preview link](https://romsmile.github.io/Test-Smart.UI/)
